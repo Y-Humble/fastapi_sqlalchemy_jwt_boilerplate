@@ -17,3 +17,9 @@ gunicorn = "^22.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.4.2"
+
+[tool.poetry.group.test.dependencies]
+faker = "^26.0.0"
+pytest = "^8.2.2"
+pytest-asyncio = "^0.23.7"
+
