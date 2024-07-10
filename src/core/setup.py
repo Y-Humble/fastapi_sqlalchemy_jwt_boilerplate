@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from core.config import settings
 from core.lifespan import lifespan
+from apps.user import user_router
 
 
 def setup_app() -> FastAPI:
@@ -22,5 +23,7 @@ def setup_app() -> FastAPI:
         allow_methods=settings.cors.methods,
         allow_headers=settings.cors.headers,
     )
+
+    app.include_router(user_router)
 
     return app
