@@ -97,6 +97,7 @@ celerybeat.pid
 
 # Environments
 src/environs/*
+!src/environs/.env.template
 .venv
 env/
 venv/
