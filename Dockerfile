@@ -15,7 +15,7 @@ RUN poetry config virtualenvs.create false && poetry install --without dev,test
 
 FROM builder as dev
 
-EXPOSE 8080
+EXPOSE $RUN__PORT
 
 COPY . .
 
