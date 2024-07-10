@@ -9,6 +9,7 @@ from alembic import context
 
 from core.db import Base
 from core.config import settings
+from apps.user import User, RefreshSessionModel
 
 config = context.config
 

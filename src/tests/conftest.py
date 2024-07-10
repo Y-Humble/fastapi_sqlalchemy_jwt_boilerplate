@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from httpx import ASGITransport, AsyncClient
 
 from builders import FakeUser
-from core.db.base import Base
+from core.db import Base
 from core.db.sidekick import db_sidekick
 from core.setup import setup_app
 
